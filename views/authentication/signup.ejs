@@ -1,0 +1,28 @@
+<% layout('layouts/boilerplate') %>
+    <section class="register">
+        <div class="container">
+            <form action="/signup" method="POST">
+                <div class="logo">
+                    <a href="#" class="navbar__logo">Augie Manager</a>
+                </div>
+
+                <div class="form__box">
+                    <div class="label">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" class="register__input" placeholder="Username">
+                    </div>
+                    <div class="label">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="register__input" placeholder="Email">
+                    </div>
+                    <div class="label">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" class="register__input"
+                            placeholder="Password">
+                    </div>
+                    <button class="sign__up__btn">Sign Up</button>
+                </div>
+
+            </form>
+        </div>
+    </section>

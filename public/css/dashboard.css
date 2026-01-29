@@ -1,0 +1,119 @@
+/* Main Styles */
+
+.dashboard__body {
+    margin-bottom: 275px;
+}
+
+.dashboard__create__task__form {
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.dashboard__create__task__form div {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.dashboard__create__task__title {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 133%;
+    color: #0a093d;
+}
+
+.dashboard__task__title {
+    width: 300px;
+    height: 40px;
+}
+
+.dashboard__desc textarea {
+    width: 400px;
+    height: 40px;
+}
+
+.dashboard__create__btn {
+    background-color: #e15c19;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.dashboard__create__btn:hover {
+    background-color: #149e07;
+    color: white;
+}
+
+.dashboard__task__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #e6e6e6;
+    padding: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    position: relative;
+}
+
+.dashboard__task__card:hover {
+    transform: translateY(-2px);
+}
+
+.dashboard__task__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #2f2c4a;
+}
+
+.dashboard__task__desc {
+    padding-top: 10px;
+    word-break: break-word;
+}
+
+.dashboard__delete__btn {
+    border: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 20px;
+    position: absolute;
+    background-color: navy;
+    color: white;
+    top: 32px;
+    right: 20px;
+    font-weight: 900;
+    transition: all .5s;
+}
+
+.dashboard__delete__btn:hover {
+    transform: scale(1.1);
+    background-color: #000;
+    color: white;
+}
+
+.dashboard__task__card:has(.dashboard__delete__btn:hover) {
+    background-color: #2b9122;
+    transition: .5s ease;
+}
+
+/* End of Main Styles */
+
+/* Responsive Section */
+
+@media (max-width: 1000px) {
+    .dashboard__create__task__form {
+        flex-direction: column;
+    }
+}
+
+/* End of Responsive Section */

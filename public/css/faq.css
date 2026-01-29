@@ -1,0 +1,51 @@
+/* Main Styles */
+
+.faq-title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #0a093d;
+    padding: 30px 0;
+}
+
+.faq__instructions-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 170px;
+}
+
+.faq__instructions__card {
+    border-radius: 14px;
+    width: 230px;
+    height: 230px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: .3s ease;
+    border-left: 5px solid #1606c5c4;
+    padding: 10px;
+}
+
+.faq__instructions__card:hover {
+    transform: translateY(-3px);
+}
+
+.faq__instructions__card h3 {
+    padding: 10px 0;
+}
+
+/* End of Main Styles */
+
+/* Responsive Section */
+
+@media (max-width: 1000px) {
+    .faq__instructions-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+/* End of Responsive Section */

@@ -1,0 +1,46 @@
+/* Main Styles */
+
+.about__us .container {
+    margin-top: 50px;
+}
+
+.about__main {
+    padding: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    color: #4e4e50;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about__text {
+    padding: 20px 0 250px 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 110%;
+    color: #444346;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* End of Main Styles */
+
+/* Responsive Section */
+
+@media (max-width: 700px) {
+    .about__main {
+        font-size: 15px;
+        max-width: 500px;
+    }
+
+    .about__text {
+        font-size: 12px;
+        max-width: 400px;
+    }
+
+}
+
+/* End of Responsive Section */

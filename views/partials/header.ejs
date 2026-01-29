@@ -1,0 +1,43 @@
+<!-- Header  -->
+<header class="header" id="header">
+    <div class="container">
+        <a href="/" class="navbar__logo">
+            Augie<span style="color: darkorange;">Pilot</span>
+        </a>
+        <img src="./assets/icons/menu.svg" alt="Menu Icon" class="menu">
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/about">About Us</a>
+            <a href="/faq">FAQ</a>
+        </nav>
+        <div class="nav__auth">
+            <% if (!currentUser) { %>
+                <a href="/login" class="log__in">Log In</a>
+                <a href="/signup" class="sign__up">Sign Up</a>
+                <% } else { %>
+                    <form action="/logout" method="GET" style="display:inline;">
+                        <button type="submit" class="log__out">Log Out</button>
+                    </form>
+                    <% } %>
+        </div>
+    </div>
+</header>
+<div class="header__line"></div>
+<!-- End of Header -->
+
+
+<!-- Flash Messages -->
+<div class="flash-messages">
+    <% if (error && error.length> 0) { %>
+        <div class="flash-error">
+            <%= error[0] %>
+        </div>
+        <% } %>
+
+            <% if (success && success.length> 0) { %>
+                <div class="flash-success">
+                    <%= success[0] %>
+                </div>
+                <% } %>
+</div>

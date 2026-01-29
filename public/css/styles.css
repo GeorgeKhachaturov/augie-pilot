@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* End of General Styles */
+
+/* Header Section */
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: #656464;
+    transition: color .5s ease;
+}
+
+.navbar__logo {
+    font-size: 30px;
+    color: navy;
+    font-weight: 700;
+    transition: transform .5s ease;
+}
+
+.navbar__logo:hover {
+    transform: scale(1.1);
+}
+
+.navbar a:hover {
+    color: #000000;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+    transition: transform .5s ease;
+}
+
+.menu:hover {
+    transform: scale(1.1);
+}
+
+.nav__auth {
+    display: flex;
+    gap: 30px;
+}
+
+.log__in {
+    padding: 15px 20px;
+    background-color: navy;
+    color: gold;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all .7s ease;
+}
+
+.log__in:hover {
+    background-color: lightblue;
+    color: navy;
+
+}
+
+.log__out {
+    padding: 15px 20px;
+    background-color: white;
+    color: navy;
+    border: 2px solid gold;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all .7s ease;
+}
+
+.log__out:hover {
+    background-color: navy;
+    color: gold;
+    border-color: navy;
+}
+
+.sign__up {
+    padding: 15px 20px;
+    background-color: white;
+    color: navy;
+    border: 2px solid gold;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all .7s ease;
+}
+
+.sign__up:hover {
+    background-color: navy;
+    color: gold;
+    border-color: navy;
+}
+
+.header__line {
+    border: 1px solid #217bf4;
+    opacity: .1;
+}
+
+/* End of Header Section */
+
+.welcome {
+    padding-top: 72px;
+    background-image: url('/assets/images/base.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+.welcome .container {
+    display: flex;
+    align-items: center;
+}
+
+.welcome__info__box {
+    border-radius: 8px;
+    width: 177px;
+    height: 36px;
+    background: #a8c6ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome__info__box p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    color: #217bf4;
+}
+
+
+.welcome__info__title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 118%;
+    color: #0a093d;
+    margin: 20px 0;
+}
+
+.welcome__info__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    color: #656464;
+    max-width: 490px;
+    margin-bottom: 42px;
+}
+
+.welcome__info__dashboard-btn {
+    border-radius: 14px;
+    width: 162px;
+    height: 62px;
+    box-shadow: 0 7px 22px -6px rgba(33, 123, 244, 0.34);
+    background: navy;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    color: gold;
+    padding: 24px 42px;
+    font-weight: bold;
+    transition: all .7s ease;
+}
+
+.welcome__info__dashboard-btn:hover {
+    background-color: lightblue;
+    color: navy;
+}
+
+.welcome__img {
+    animation: movePhoto 2.5s infinite alternate;
+}
+
+@keyframes movePhoto {
+    0% {
+        transform: none;
+    }
+
+    100% {
+        transform: translateY(-40px);
+    }
+}
+
+/* End of Welcome Section */
+
+/* Section Features */
+
+.features {
+    background: url('/assets/images/base2.svg');
+}
+
+.features__info {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.features__title {
+    font-size: 36px;
+    color: #0a093d;
+    padding-bottom: 20px;
+}
+
+.features__description {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #656464;
+    max-width: 420px;
+}
+
+.features__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.features__card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 14px;
+    width: 522px;
+    height: 182px;
+    box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+    background: #fff;
+    transition: transform .8s;
+}
+
+.features__card:hover {
+    transform: translateY(-15px);
+}
+
+.features__card__info-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 108%;
+    color: #2f2c4a;
+    padding-bottom: 14px;
+}
+
+.features__card__info-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    color: #656464;
+    max-width: 315px;
+}
+
+/* End of Features Section */
+
+/* Footer Section */
+
+.footer {
+    background-color: navy;
+}
+
+.footer__links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 70px 0 20px 0;
+}
+
+.footer__links ul li a {
+    color: gold;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+    transition: all .3s ease;
+
+}
+
+.footer__links ul li a:hover {
+    color: rgb(190, 190, 190);
+    text-decoration: underline;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.footer__logo {
+    font-size: 30px;
+    color: gold;
+    font-weight: 700;
+}
+
+.footer__bottom__text {
+    font-size: 15px;
+    color: #85aae1;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer__bottom ul {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.footer__bottom ul li {
+    transition: transform .5s ease;
+}
+
+.footer__bottom ul li:hover {
+    transform: translateY(-5px);
+}
+
+/* End of Footer Section */
+
+/* Responsive Section */
+
+@media (max-width: 1200px) {
+    .welcome__info__title {
+        font-size: 40px;
+    }
+
+    .welcome__info__description {
+        font-size: 16px;
+    }
+
+    .welcome__img {
+        width: 55%;
+    }
+}
+
+@media (max-width: 900px) {
+    .welcome__info__title {
+        font-size: 30px;
+    }
+
+    .welcome__info__description {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .welcome .container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .welcome .container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .welcome__img {
+        animation: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+        background-color: rgb(204, 200, 200);
+        position: absolute;
+        top: 80px;
+        left: 220px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .welcome__info__title {
+        font-size: 18px;
+    }
+
+    .welcome__info__description {
+        font-size: 13px;
+    }
+
+    .features__title {
+        font-size: 30px;
+    }
+
+    .features__description {
+        font-size: 14px;
+    }
+
+    .features__card {
+        width: 400px;
+        height: 160px;
+    }
+
+    .features__card__info-title {
+        font-size: 20px;
+    }
+
+    .features__card__info-text {
+        font-size: 14px;
+    }
+
+    .features__card img {
+        width: 100px;
+    }
+
+    .footer__bottom__text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav__auth {
+        flex-direction: column;
+    }
+
+    .navbar.active {
+        top: 115px;
+        left: 220px;
+    }
+
+    .welcome__info {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 420px) {
+    .navbar__logo {
+        font-size: 22px;
+    }
+
+    .navbar.active {
+        top: 120px;
+        left: 70px;
+    }
+
+    .welcome__info {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features__card {
+        width: 300px;
+        height: 150px;
+    }
+
+    .features__card__info-title {
+        font-size: 17px;
+    }
+
+    .features__card__info-text {
+        font-size: 12px;
+    }
+
+    .footer__links ul li {
+        font-size: 13px;
+    }
+}
+
+/* End of Responsive Section */

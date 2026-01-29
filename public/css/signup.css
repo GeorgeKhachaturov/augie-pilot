@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.logo {
+    padding: 50px;
+}
+
+/* Main Styles */
+
+.register .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register__input {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 5px;
+}
+
+.form__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    border: 1px solid ghostwhite;
+    border-radius: 4px;
+    width: 450px;
+    height: 380px;
+    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.12);
+    background: white;
+}
+
+.sign__up__btn {
+    border: none;
+    border-radius: 5px;
+    padding: 0px 24px;
+    width: 400px;
+    height: 48px;
+    background-color: gold;
+    font-size: 18px;
+    text-align: center;
+    transition: all .3s;
+}
+
+.sign__up__btn:hover {
+    background-color: navy;
+    color: gold;
+}
+
+/* End of Main Styles */
+
+/* Responsive Section */
+
+@media (max-width: 500px) {
+    .form__box {
+        max-width: 300px;
+    }
+
+    .register__input {
+        width: 280px;
+    }
+
+    .sign__up__btn {
+        width: 280px;
+    }
+}
+
+/* End of Responsive Section */
